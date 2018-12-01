@@ -27,7 +27,7 @@ class MiArchivoEscribir:
         self.archivo = codecs.open("data/demo2.csv", "a")
 
     def agregar_informacion(self, p):
-        self.archivo.write("%s\n\t%s\n\t\t%d\n\t\t\t%d\n" % (p.nombre, p.apellido,\
+        self.archivo.write("%s-%s-%d-%d\n" % (p.nombre, p.apellido,\
                 p.edad, p.codigo))
 
     def cerrar_archivo(self):
